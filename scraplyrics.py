@@ -1,7 +1,7 @@
-import bs4 as bs
-import urllib.request
-
 def scrap(site):
+    import bs4 as bs
+    import urllib.request
+
     siteSplitted = site.split("/")
     lyricsName=str(siteSplitted[len(siteSplitted)-1])
     vraiSite= "https://genius.com/amp/"+lyricsName
@@ -17,6 +17,7 @@ def scrap(site):
     lyrics = open('temp/lyrics.txt','w')
     lyrics.write(tmp.text)
     lyrics.close()
+    return tmp.text
 
 if __name__ == '__main__':
     scrap("https://genius.com/Alpha-wann-soldat-tue-soldat-lyrics")
