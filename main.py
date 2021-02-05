@@ -10,10 +10,25 @@ def openData(jsonFilePath):
 
 
 def main():
+    counter = {}
     url = input("Quel est le lien Genius: ")
     text = scraplyrics.scrap(url)
     lexicalFieldData = openData("champLexicaux.json")
-    print(lexicalFieldData)
+    totalWordsFound = 0
+    for champ in lexicalFieldData.keys():
+        counter[champ] = 0
+        for mot in lexicalFieldData[champ]:
+            returnList = boyermoore.boyer_moore(text,mot)
+            counter[champ] += len(returnList)
+            totalWordsFound += len(returnList)
+    print(counter)
+    print("Voici les thèmes trouvés:")
+    for champ in counter.keys():
+        if counter[champ]!=0:
+            print(str(champ)+" : "+str(round(counter[champ]/totalWordsFound*100))+" %")
+    
+
+            
 
 
 if __name__ == '__main__':
