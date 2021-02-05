@@ -14,7 +14,7 @@ def scrap(site):
 
 
     tmp = soupl.find('div', "lyrics")
-    lyrics = open('temp/lyrics.txt','w')
+    lyrics = open('temp/lyrics.txt', 'w', encoding='utf-8')
     lyrics.write(tmp.text)
     lyrics.close()
     return tmp.text
