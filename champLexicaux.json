@@ -1,6 +1,7 @@
 {
     "mort": [
         "Agonie",
+        "mort",
         " disparition",
         " extinction",
         " décès",
@@ -28,8 +29,7 @@
         " cercueil",
         " bière",
         " linceul",
-        " suaire",
-        ""
+        " suaire"
     ],
     "sport": [
         "Alpinisme",
@@ -84,7 +84,8 @@
         " entraînement",
         " équipe",
         "cour",
-        "march"
+        "march",
+        "suer"
     ],
     "nourriture": [
         "Nourrir",
@@ -227,6 +228,12 @@
     ],
     "guerre": [
         "Belligérance",
+        "mort",
+        "décès",
+        "Algérie",
+        "Vietnam",
+        "guerre",
+        "Hitler",
         " affrontement",
         " conflit",
         " combat",
@@ -291,7 +298,8 @@
         " phallocratie",
         " sexiste",
         " misogyne",
-        "négro"
+        "négro",
+        "Hitler",
     ],
     "religion": [
         "Bouddhisme",
