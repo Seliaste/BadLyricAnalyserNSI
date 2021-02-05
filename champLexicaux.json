@@ -32,6 +32,7 @@
         " suaire"
     ],
     "sport": [
+        "sport",
         "Alpinisme",
         " athlétisme",
         " aviron",
@@ -88,6 +89,7 @@
         "suer"
     ],
     "nourriture": [
+        "nourriture",
         "Nourrir",
         " se nourrir",
         " alimenter",
@@ -151,6 +153,7 @@
         " poisson"
     ],
     "corps": [
+        "corps",
         "Bras",
         " épaule",
         " jambe",
@@ -271,6 +274,7 @@
         " abordage"
     ],
     "racisme": [
+        "racisme",
         "Chauvinisme",
         " fanatisme",
         " ségrégation",
@@ -302,6 +306,7 @@
         "Hitler"
     ],
     "religion": [
+        "religion",
         "Bouddhisme",
         " Christianisme",
         " Islam",
@@ -355,7 +360,8 @@
         " vénérer",
         " diviniser"
     ],
-    "lumiere": [
+    "lumière": [
+        "lumière",
         "Soleil",
         " jour",
         " clair",
@@ -394,6 +400,7 @@
         " étincelant"
     ],
     "injustice": [
+        " injustice",
         "Abus",
         " excès",
         " brimade",
@@ -443,6 +450,7 @@
         " préjudiciable"
     ],
     "justice": [
+        "justice",
         "Judiciaire",
         " condamnation",
         " juridique",
@@ -504,10 +512,12 @@
         " relaxer",
         " mise en examen",
         " non-lieu",
+        "juste",
         " réhabilitation"
     ],
-    "reve": [
+    "rêve": [
         "Imagination",
+        "rêve",
         " mirage",
         " fantasme",
         " hallucination",
@@ -547,6 +557,7 @@
         " imaginatif"
     ],
     "souffrance": [
+        "souffrance",
         "Supplice",
         " châtiment",
         " mal",
@@ -592,6 +603,8 @@
         " endurer"
     ],
     "obscurité": [
+        "obscure",
+        "obscurité",
         "Black-out",
         " nébulosité",
         " noirceur",
@@ -617,6 +630,7 @@
         " ternir"
     ],
     "solitude": [
+        "solitude",
         "Isolement",
         " isolation",
         " claustration",
@@ -647,6 +661,7 @@
         " se retirer."
     ],
     "richesse": [
+        "richesse",
         "Fortune",
         " abondance",
         " prospérité",
@@ -688,6 +703,7 @@
         " amasser"
     ],
     "paix": [
+        "paix",
         "Calme",
         " pacifique",
         " pacifier",
@@ -709,6 +725,7 @@
         " pacte"
     ],
     "drogue": [
+        "drogue",
         "Dealer",
         "Weed",
         "Beuh",
@@ -731,6 +748,7 @@
         "xanax"
     ],
     "amour": [
+        "amour",
         "amoureux",
         "tendresse",
         "amitié",
