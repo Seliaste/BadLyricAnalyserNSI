@@ -1,7 +1,7 @@
-import scraplyrics
-import json
-import boyermoore
-import matplotlib.pyplot as plt
+import scraplyrics # On importe la bibliothèque scraplyrics
+import json # On importe la bibliothèque json
+import boyermoore # On importe la bibliothèque boyermoore
+import matplotlib.pyplot as plt # On importe la bibliothèque matplotlib.pyplot
 
 
 def openData(jsonFilePath):
