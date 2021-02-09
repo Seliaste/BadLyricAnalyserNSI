@@ -41,7 +41,6 @@
     " basketball",
     " bowling",
     " boxe",
-    " combat",
     " course",
     " cricket",
     " cyclisme",
@@ -150,9 +149,15 @@
     " légume",
     " viande",
     " laitage",
-    " poisson"
+    " poisson",
+    "mang"
   ],
   "guerre": [
+    "guerre",
+    "espoir",
+    "survivre",
+    "bat",
+    "plombé",
     "Belligérance",
     "mort",
     "décès",
@@ -194,7 +199,8 @@
     " stratégie",
     " offensive",
     " agression",
-    " abordage"
+    " abordage",
+    "arm"
   ],
   "racisme": [
     "racisme",
@@ -225,10 +231,14 @@
     " phallocratie",
     " sexiste",
     " misogyne",
-    "négro",
-    "Hitler"
+    " négro",
+    " Hitler",
+    " juif"
   ],
   "religion": [
+    "Jésus",
+    "Jéhovah",
+    "Vichnou",
     "religion",
     "Bouddhisme",
     " Christianisme",
@@ -254,7 +264,7 @@
     " calife",
     " minaret",
     " mosquée",
-    "église",
+    " église",
     " cathédrale",
     " temple",
     " synagogue",
@@ -281,9 +291,13 @@
     " sacraliser",
     " idolétrer",
     " vénérer",
-    " diviniser"
+    " diviniser",
+    " juif",
+    " chr",
+    " islam",
+    " pri"
   ],
-  "lumière": [
+  "lumiere": [
     "lumière",
     "Soleil",
     " jour",
@@ -438,7 +452,7 @@
     "juste",
     " réhabilitation"
   ],
-  "rêve": [
+  "reve": [
     "Imagination",
     "rêve",
     " mirage",
@@ -480,7 +494,7 @@
     " imaginatif"
   ],
   "souffrance": [
-    "souffrance",
+    "souffr",
     "Supplice",
     " châtiment",
     " mal",
@@ -525,8 +539,8 @@
     " infliger",
     " endurer"
   ],
-  "obscurité": [
-    "obscure",
+  "obscurite": [
+    "obscur",
     "obscurité",
     "Black-out",
     " nébulosité",
@@ -553,7 +567,8 @@
     " ternir"
   ],
   "solitude": [
-    "solitude",
+    "soli",
+    "seuk",
     "Isolement",
     " isolation",
     " claustration",
@@ -584,7 +599,7 @@
     " se retirer."
   ],
   "richesse": [
-    "richesse",
+    "rich",
     "Fortune",
     " abondance",
     " prospérité",
