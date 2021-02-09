@@ -1,19 +1,20 @@
-import scraplyrics
-import json
-import boyermoore
-import matplotlib.pyplot as plt
+import scraplyrics    #on importe la bibliothèque scraplyrics
+import json      #on importe le fichier json
+import boyermoore      #on importe le fichier boyer_moore
+import matplotlib.pyplot as plt      #on importe la bibliothèque matplotlib
 
 
-def openData(jsonFilePath):
-    file = open(str(jsonFilePath), "r")
-    data = json.load(file)
+def openData(jsonFilePath):    
+    file = open(str(jsonFilePath), "r")    #on ouvre le fichier json
+    data = json.load(file)      #on lis le fichier json
     return data
 
 
 def main(url=None, printout=True):
     counter = {}
     text = scraplyrics.scrap(url)
-    lexicalFieldData = openData("champLexicaux.json")
+    lexicalFieldData = openData("champLexicaux.json")     #on ouvre le fichier champLexicaux.json
+    #champLexicaux.json qui contient tous les champs lexicaux qu'on utilise
     totalWordsFound = 0
     for champ in lexicalFieldData.keys():
         counter[champ] = 0
