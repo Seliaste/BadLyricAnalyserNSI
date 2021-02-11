@@ -23,7 +23,7 @@ def main(url=None, printout=True):
             counter[champ] += len(returnList)
             totalWordsFound += len(returnList)
     if printout == True:
-        altCounter = counter.copy()
+        altCounter = counter.copy()  
         print("Voici les thèmes trouvés:")
         for champ in counter.keys():
             if counter[champ] != 0:
