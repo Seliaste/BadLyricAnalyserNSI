@@ -45,15 +45,17 @@ if __name__ == '__main__':
     from kivy.uix.button import Button
     from kivy.uix.textinput import TextInput
     from kivy.uix.boxlayout import BoxLayout
+    from kivy.core.window import Window
 
     class UIApp(App):
         def build(self):
             self.title = 'Analyzer'
+            Window.clearcolor = (0.3, 0.3, 0.3, 1)
             b = BoxLayout(orientation='vertical', padding=10)
             l = Label(text="Lyrics analyser",
                       font_size=50, bold=True)
             b1 = BoxLayout(padding=40)
-
+    
             l1 = Label(text="URL de la page Genius : ", font_size=20)
             i1 = TextInput(font_size=20, height=50, padding=10, background_color=(
                 0.2, 0.2, 0.2, 1), foreground_color=(1, 1, 1, 1))
