@@ -23,16 +23,15 @@ def main(url=None, printout=True):
             counter[champ] += len(returnList)
             totalWordsFound += len(returnList)
     if printout == True:
-        altCounter = counter.copy()
+        altCounter = counter.copy()  
         print("Voici les thèmes trouvés:")
         for champ in counter.keys():
             if counter[champ] != 0:
                 print(str(champ)+" : " +
-                      str(round(counter[champ]/totalWordsFound*100))+" %")
+                    str(round(counter[champ]/totalWordsFound*100))+" %")
             else:
-                del altCounter[champ]
-        plt.barh(range(len(altCounter)), list(
-            altCounter.values()), align='center')
+                del altCounter[champ]     #on supprime ce qu'il y a dans altCounter
+        plt.barh(range(len(altCounter)), list(altCounter.values()), align='center')
         plt.yticks(range(len(altCounter)), list(altCounter.keys()))
         plt.show()
     return altCounter

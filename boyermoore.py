@@ -1,4 +1,4 @@
-def table_sauts(cle) : # On définit notre table de saut
+def table_sauts(cle) :
     """la fonction renvoie la table de décalage en utilisant la formule :
     pour toute lettre de cle : decalage = longueur de cle - index de la lettre -1
     sauf dernière lettre et toutes les autres : decalage = longueur de cle
@@ -7,10 +7,10 @@ def table_sauts(cle) : # On définit notre table de saut
     postcondition :
         dict
     """
-    d = {} # On définit d comme dictionnaire
-    for i in range(len(cle)-1) : # On parcours la clé
+    d = {}
+    for i in range(len(cle)-1) :
         d[cle[i]] = len(cle)-i-1
-    for lettre in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' : # On parcours l'alphabet
+    for lettre in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' :
         if lettre not in d.keys() :
             d[lettre] = len(cle)
     return d
