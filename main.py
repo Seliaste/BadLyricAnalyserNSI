@@ -38,43 +38,45 @@ def main(url=None, printout=True):
 
 
 if __name__ == '__main__':
-    import tkinter as tk
-    from kivy.app import App
+    from kivy.app import App    # On importe kivy et ses modules spécifique aux programmes
     from kivy.uix.label import Label
     from kivy.uix.button import Button
     from kivy.uix.textinput import TextInput
     from kivy.uix.boxlayout import BoxLayout
     from kivy.core.window import Window
 
-    class UIApp(App):
-        def build(self):
-            self.title = 'Analyzer'
-            Window.clearcolor = (0.3, 0.3, 0.3, 1)
-            b = BoxLayout(orientation='vertical', padding=10)
+    class UIApp(App):   #Classe qui régit l'application
+        def build(self):    #Méthode de construction de la fenêtre
+            self.title = 'Analyzer' #titre de la fenêtre
+            Window.clearcolor = (0.3, 0.3, 0.3, 1)  #couleur de fond
+            b = BoxLayout(orientation='vertical', padding=10)   #layout haut en bas 
             l = Label(text="Lyrics analyser",
-                      font_size=50, bold=True)
-            b1 = BoxLayout(padding=40)
+                      font_size=50, bold=True)  #titre
+            b1 = BoxLayout(padding=40)  #box horizontale pour l'input et son label
     
-            l1 = Label(text="URL de la page Genius : ", font_size=20)
+            l1 = Label(text="URL de la page Genius : ", font_size=20)   #Label pour l'input
             i1 = TextInput(font_size=20, height=50, padding=10, background_color=(
-                0.2, 0.2, 0.2, 1), foreground_color=(1, 1, 1, 1))
-            b1.add_widget(l1)
-            b1.add_widget(i1)
+                0.2, 0.2, 0.2, 1), foreground_color=(1, 1, 1, 1)) #l'input en question pour l'URL
+            b1.add_widget(l1)   #on ajoute à la box horizontale
+            b1.add_widget(i1)   #idem
 
-            b.add_widget(l)
-            b.add_widget(b1)
+            b.add_widget(l) #on ajoute le titre à la main box
+            b.add_widget(b1)    #on ajoute la box horizontale à la main box
 
-            okButton = Button(text="Start")
+            okButton = Button(text="Start") #bouton pour lancer (on lui met la fonction plus tard)
             b.add_widget(okButton)
 
             returnZone = TextInput(text="", font_size=20, padding=20, background_color=(
-                0.2, 0.2, 0.2, 1), foreground_color=(1, 1, 1, 1))
+                0.2, 0.2, 0.2, 1), foreground_color=(1, 1, 1, 1))   # zone dans laquelle on va mettre le return de main()
             b.add_widget(returnZone)
 
-            def startMainProgram(instance):
-                url = i1.text
-                returnZone.text = str(main(url, True))
-            okButton.bind(on_release=startMainProgram)
-
-            return b
+            def startMainProgram(instance): #on doit définir la fonction dans le build() sinon ça ne marche pas
+                url = i1.text   #on récupère l'URL entrée
+                if url == "" or "/" not in url:
+                    returnZone.text = "URL Invalide"
+                else:    
+                    returnZone.text = str(main(url, True))
+            okButton.bind(on_release=startMainProgram)  #on ajoute la fonction au bouton
+            return b    #on return la box principale comme racine du programme
+            
     UIApp().run()
